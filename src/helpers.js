@@ -56,7 +56,7 @@ export function dispose(cmd, data) {
     };
     // xhr.onerror = reqError;
     // todo: checken, ob localhost oder server (production), dann relative url nutzen
-    xhr.open('post', 'http://localhost/dev/Products/rockadr/php/dispose.php', true);
+    xhr.open('post', 'http://localhost/dancingninjas/php/dispose.php', true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send(serialize(para));
   });

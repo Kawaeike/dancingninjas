@@ -1,24 +1,20 @@
 <?php
 	// default
 	$return['naviItems'] = [
-		'home' => [ 'key' => 'home', 'btnName' => 'Home' ],
-		'account' => ['key' => 'account', 'btnName' => 'Account' ]
+		'overwatch' => [ 'key' => 'overwatch', 'btnName' => 'Overwatch' ],
+		'snitchlist' => ['key' => 'snitchlist', 'btnName' => 'Snitchlist' ]
 	];
 
-	$user = $postData['user'];
 
-	if (!$user) {
-		$return['naviItems'] = [
-			'home' => [ 'key' => 'home', 'btnName' => 'Home' ],
-			'account' => ['key' => 'account', 'btnName' => 'Account' ]
-		];
-	} else {
-		// checken, welche navi-rechte der user hat und navi-items hinzufügen
-		if ($user['uid'] === '6611') {
-			$return['naviItems']['admin'] = [ 'key' => 'admin', 'btnName' => 'Admin' ];
-		}
-	}
+	// $user = $postData['user'];
 
-	$return['currentItemKey'] = 'home';
+	// if (!$user) {
+	// 	$return['naviItems'] = [
+	// 		'overwatch' => [ 'key' => 'overwatch', 'btnName' => 'Overwatch' ],
+	// 		'snitchlist' => ['key' => 'snitchlist', 'btnName' => 'Snitchlist' ]
+	// 	];
+	// }
+
+	// $return['currentItemKey'] = 'home';
 
 ?>
